@@ -1,4 +1,4 @@
-from shared import *
+from useful_stuff import *
 from configtools import *
 
 

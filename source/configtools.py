@@ -1,5 +1,3 @@
-from shared import *
-
 from configparser import ConfigParser
 from os import environ
 from os import getcwd

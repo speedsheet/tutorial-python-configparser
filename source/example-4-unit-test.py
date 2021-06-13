@@ -1,10 +1,11 @@
-from shared import *
-
+from useful_stuff import *
 from configparser import ConfigParser
 from unittest import TestCase
 
+
 CONFIG_CONTENTS = '''[test-section]
 test-1 = value-1'''
+
 
 class TestConfigParser(TestCase):
 

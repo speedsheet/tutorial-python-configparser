@@ -1,26 +1,14 @@
-from shared import *
-
 from configparser import ConfigParser
 
+config_1 = ConfigParser()
+config_1.read('sample.ini')
 
-title ('ConfigParser')
+print()
 
+for section_name in config_1.sections():
 
-highlight('Read File')
+    section = config_1[section_name]
 
-config = ConfigParser()
-config.read('sample.ini')
-
-
-
-highlight('Show Properties')
-
-for name in config.sections():
-
-    section = config[name]
-
-    for key, value in section.items():
-        print_indent(1, name + ' ' + key, value)
-
-    nl()
-
+    for property_name, value in section.items():
+        print(section_name, property_name, "=", value)
+    print()

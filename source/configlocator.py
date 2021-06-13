@@ -1,5 +1,3 @@
-from shared import *
-
 from configparser import ConfigParser
 from os import environ
 from os import getcwd
@@ -48,7 +46,7 @@ def _linux_location(config_location):
 def _windows_location(config_location):
     return _default_location(config_location, environ['HOMEPATH'])
 
-def find(config_location):
+def locate(config_location):
 
     if _in_environment_location(config_location):
         return environment_location(config_location)
