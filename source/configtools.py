@@ -21,13 +21,16 @@ def read_string(string_1):
     config.read_string(string_1)
     return config
 
-def read_sectionless(file_name, sectionless_name = 'default'):
-    """ Reads a configuration file including
-        properties without a section.
+def read_sectionless(file_name):
+    """ Reads all properties before
+        any sections.
+        Ignores standard sections and properties.
     """
     with open(file_name,'r') as file:
         contents = file.read()
-        return read_string(f'[{sectionless_name}]\n{contents}')
+
+    config = read_string(f'[default]\n{contents}')
+    return read_string(f'[default]\n{contents}')['default']
 
 ## Validation ##############################################
 

@@ -4,8 +4,10 @@ from os import getcwd
 from os.path import *
 from platform import system
 
+
 LINUX_CONFIG_LOCATION = 'HOME'
 WINDOWS_CONFIG_LOCATION = 'HOMEPATH'
+
 
 class Location:
 
@@ -14,6 +16,7 @@ class Location:
             raise ValueError("Missing config_file_name.")
         self.config_file_name = config_file_name
         self.environment_name = environment_name
+
 
 def _default_directory_name(config_location):
     return "." + splitext(basename(config_location.config_file_name))[0].lower()
