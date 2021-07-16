@@ -8,8 +8,14 @@ These source files go along with the tutorial. You are free to use them as you l
 ### Python SpeedSheet
 
 All the ConfigParser commands and many others are available on the Python SpeedSheet here:
- 
+
+**SpeedSheet:**
+
 [https://speedsheet.io/s/python]
+
+**ConfigParser Section:**
+
+[https://speedsheet.io/s/python?search=configparser]
 
 
 
